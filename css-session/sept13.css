@@ -1,0 +1,28 @@
+h1{
+  color: blueviolet;
+}
+
+h1:hover{
+  text-decoration: underline;
+  color: turquoise;
+}
+
+.links:visited{
+  color: burlywood ;
+}
+
+.user-input:focus{
+  background-color: violet;
+}
+
+.user-input::placeholder{
+  color: yellow;
+}
+
+input[name]{
+  background-color: yellowgreen;
+}
+
+input[type="number"]{
+  background-color: tomato;
+}

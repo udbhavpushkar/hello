@@ -13,4 +13,18 @@ h4{
 #sonu{
   color: teal;
   font-size: 22px;
+  text-decoration: underline;
+}
+
+/* div p{
+  font-weight: 600;
+  color: yellowgreen;
+} */
+
+.wrapper > .title{
+  color: peru;
+}
+
+.title + p{
+  text-decoration: underline;
 }
