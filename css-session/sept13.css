@@ -19,6 +19,10 @@ h1:hover{
   color: yellow;
 }
 
+.user-input:hover::placeholder{
+  color: red;
+}
+
 input[name]{
   background-color: yellowgreen;
 }
