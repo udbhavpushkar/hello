@@ -1,0 +1,99 @@
+/* body{
+  background: url("https://media.gettyimages.com/photos/purple-space-stars-picture-id157639696"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+/* .box{
+  width: 300px;
+  height: 200px;
+  border: 1px solid white;
+  background: wheat;
+  padding: 20px 30px;
+  opacity: 40%;
+} */
+
+.relative{
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  position: relative;
+  left: 100px;
+  top: 300px;
+}
+
+.fixed{
+  width: 100px;
+  height: 100px;
+  border: 2px solid blue;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+
+.wrapper{
+  position: relative;
+  height: 400px;
+  width: 700px;
+  border: 1px solid green;
+}
+
+.absolute{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  animation-name: moving-box;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.sticky{
+  position: sticky;
+  top: 5px;
+  height: 100px;
+  width: 100%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example{
+  0%{
+    background-color: red;
+  }
+  10%{
+    background-color: yellow;
+  }
+  30%{
+    background-color: aquamarine;
+  }
+  60%{
+    background-color: yellowgreen;
+  }
+  80%{
+    background-color: wheat;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+@keyframes moving-box {
+  0%{
+    left: 0px;
+  }
+
+  50%{
+    left: 650px;
+  }
+
+  100%{
+    left: 0px;
+  }
+}
