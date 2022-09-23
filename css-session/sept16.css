@@ -97,3 +97,14 @@
     left: 0px;
   }
 }
+
+.grid-wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-wrapper div{
+  background-color: orange;
+  border: 1px solid black;
+  height: 100px;
+}
