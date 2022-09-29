@@ -24,17 +24,17 @@ var x = function (a) {
 
 // x("Anwar")
 
-function sayHello() {
-  console.log("hi everyone")
-}
+// function sayHello() {
+//   console.log("hi everyone")
+// }
 
-function jagesvar() {
-  console.log("hi jageshwar")
-}
+// function jagesvar() {
+//   console.log("hi jageshwar")
+// }
 
-function akhilesh(z) {
-  z()
-}
+// function akhilesh(z) {
+//   z()
+// }
 
 // akhilesh(sayHello)
 // akhilesh(jagesvar)
@@ -185,18 +185,96 @@ let user2 = {
 //   console.log(arr1[i])
 // }
 
-let v1 = "Akhilesh"
+// let v1 = "Akhilesh"
 
-function f1() {
-  let v1 = "Rajeev"
+// function f1() {
+//   let v1 = "Rajeev"
 
-  function f2() {
-    console.log(v1)
-  }
+//   function f2() {
+//     console.log(v1)
+//   }
 
-  f2()
-}
+//   f2()
+// }
 
-f1()
+// f1()
 
 // Closure => Function that have access to its parent scope/lexical envireomnet
+// A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+// function c1() {
+//   var q = 87
+
+//   function c2() {
+//     console.log(q)
+//   }
+//   return c2
+// }
+
+// var y = c1()
+
+// y() // calling c2()
+// console.log(y)
+
+// Callback Functions => When a function is passed as an argument to another function
+
+function sayHello() {
+  console.log("hi everyone")
+}
+
+// function akhilesh(z) {
+//   console.log("Hey 1. 2. 3...")
+//   z()
+// }
+
+// // We are calling akhilesh, passing sayHello as an argument
+// akhilesh(sayHello)
+
+// // We are calling akhilesh, passing anonymous (fn without name) function as an argument
+// akhilesh(function () {
+//   console.log("hi jageshwar")
+// })
+
+// console.log("Hey first")
+
+// // call sayHello function after 4000 milliseconds (4sec)
+
+// setTimeout(sayHello, 4000)
+
+// setTimeout(function () {
+//   console.log("hi from anonymous function")
+// }, 4000)
+
+// console.log("hey last")
+
+// let num = 60
+// let timer = setInterval(function () {
+//   num--
+//   console.log(num)
+// }, 1000)
+
+// setTimeout(function () {
+//   clearInterval(timer)
+// }, 7000)
+
+// setTimeout => Calls a function after certain time
+// setInterval => Calls a function repeatedly after certain time interval
+// clearInterval => To stop setInterval
+
+// Task => explore and use .sort function in array
+
+// new Date(year, month, date, hr, min, sec, milliseconds)
+
+// Month 0-11 => 11 december, 1 feburary
+
+let currentDate = new Date()
+let sohilDOB = new Date(1997, 3, 1, 11, 5, 45, 2)
+let randomDate = new Date(378127381812) // will return date milliseconds passed after 1 Jan, 1970
+
+new Date()
+
+// 1 Jan, 1970
+
+console.log("Current Date  : " + currentDate)
+console.log("Sohil DOB : " + sohilDOB)
+console.log("Random Date : " + randomDate)
