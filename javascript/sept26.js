@@ -267,14 +267,73 @@ function sayHello() {
 
 // Month 0-11 => 11 december, 1 feburary
 
-let currentDate = new Date()
-let sohilDOB = new Date(1997, 3, 1, 11, 5, 45, 2)
-let randomDate = new Date(378127381812) // will return date milliseconds passed after 1 Jan, 1970
-
-new Date()
+// let currentDate = new Date() // currentDate
+// let sohilDOB = new Date(1997, 3, 1, 11, 5, 45, 2)
+// let customDate = new Date(994193849384) // will return date milliseconds passed after 1 Jan, 1970 00:00:00
 
 // 1 Jan, 1970
 
-console.log("Current Date  : " + currentDate)
-console.log("Sohil DOB : " + sohilDOB)
-console.log("Random Date : " + randomDate)
+// console.log("Current Date  : " + currentDate)
+// console.log("Sohil DOB : " + sohilDOB)
+// console.log("Random Date : " + customDate)
+
+// let year = currentDate.getFullYear()
+// let month = currentDate.getMonth() + 1
+// let date = currentDate.getDate()
+
+// console.log("Custom date format : " + date + "/" + month + "/" + year)
+
+// 30/9/2022
+
+// Task => print current time in 12hrs and 24hrs clock format , 7:23PM and 19:23
+
+// let obj1 = {
+//   intro: function (a) {
+//     console.log("My name is " + this.name)
+//     console.log("Printing from agrs : " + a)
+//   },
+//   name: "Kanchan",
+//   age: 22,
+//   marks: [23, 65, 98, 12],
+// }
+
+// //JSON => JavaScript Object Notation
+// // {
+// //   name: "Udbhav",
+// //   age: 25,
+// //   address: "UP",
+// // }
+
+// obj1.name = "Sunny"
+
+// obj1.intro("jhfhjghj")
+
+let ages = [32, 65, 87, 12, 67, 6, 9, 7, 2, 5] // array of numbers
+let names = ["Jag", "Shivam", "Maiyank", "Mishra"] // array of strings
+let users = [
+  { name: "Udbhav", age: 24 },
+  { name: "Shivam", age: 22 },
+  { name: "Risabh", age: 22 },
+] // array of objects
+
+// let str = ""
+// for (let i = 0; i < ages.length; i++) {
+//   str += ages[i] + " "
+// }
+
+console.log(ages)
+
+// ages.push(34) //Add element in array at last
+// ages.pop() //Remove element from last
+// ages.shift() //Remove element from first
+// ages.unshift(322) //Insert element at start
+
+// let deb = ages.slice(1, 3) // .slice(start, end) it will return the new sliced array
+
+// console.log(deb)
+
+ages.splice(3, 4) // .splice(start, deletionCount)
+
+//Task =>  Find how to add elements using splice
+
+console.log(ages)
