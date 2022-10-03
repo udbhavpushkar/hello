@@ -66,23 +66,23 @@ var x = function (a) {
 
 // Object => Key : value pair
 
-let user1 = { name: "Hemant", age: 27, gender: "male" }
+// let user1 = { name: "Hemant", age: 27, gender: "male" }
 
 // console.log(user1.name + " is " + user1.age + " year old " + user1.gender)
 
-user1.name = "Shudhanshu"
+// user1.name = "Shudhanshu"
 
 // console.log(user1.name)
 
-let user2 = {
-  name: "Jayeshre",
-  age: 29,
-  gender: "female",
-  eat: function () {
-    console.log("I am eating")
-  },
-  address: { city: "Delhi", pincode: "223344" },
-}
+// let user2 = {
+//   name: "Jayeshre",
+//   age: 29,
+//   gender: "female",
+//   eat: function () {
+//     console.log("I am eating")
+//   },
+//   address: { city: "Delhi", pincode: "223344" },
+// }
 
 // console.log(user2.address)
 
@@ -308,32 +308,99 @@ function sayHello() {
 
 // obj1.intro("jhfhjghj")
 
-let ages = [32, 65, 87, 12, 67, 6, 9, 7, 2, 5] // array of numbers
-let names = ["Jag", "Shivam", "Maiyank", "Mishra"] // array of strings
-let users = [
-  { name: "Udbhav", age: 24 },
-  { name: "Shivam", age: 22 },
-  { name: "Risabh", age: 22 },
-] // array of objects
+// let ages = [32, 65, 87, 12, 67, 6, 9, 7, 2, 5] // array of numbers
+// let names = ["Jag", "Shivam", "Maiyank", "Mishra"] // array of strings
+// let users = [
+//   { name: "Udbhav", age: 24 },
+//   { name: "Shivam", age: 22 },
+//   { name: "Risabh", age: 22 },
+// ] // array of objects
 
 // let str = ""
 // for (let i = 0; i < ages.length; i++) {
 //   str += ages[i] + " "
 // }
 
-console.log(ages)
-
+// console.log(ages)
 // ages.push(34) //Add element in array at last
 // ages.pop() //Remove element from last
-// ages.shift() //Remove element from first
+// ages.shift() //Remove element from start
 // ages.unshift(322) //Insert element at start
 
 // let deb = ages.slice(1, 3) // .slice(start, end) it will return the new sliced array
 
 // console.log(deb)
 
-ages.splice(3, 4) // .splice(start, deletionCount)
+// ages.splice(3, 4) // .splice(start, deletionCount)
 
 //Task =>  Find how to add elements using splice
 
-console.log(ages)
+//Remove elements using splice
+// ages.splice(2, 4)            =>.splice(start, elementDeletionCount)
+
+//Adding elements using splice ,note : while adding elements using splice always set 2nd argument as 0
+// ages.splice(0, 0, 88, 77, 323232, 9090)
+
+//Replace elements using splice
+// ages.splice(0, 2, 88, 77, 323232, 9090)
+
+// console.log(ages)
+
+// function triple(a) {
+//   return a * 3
+// }
+
+// triple(32)
+
+//Arrow functions
+// const arrowTriple = (a) => a * 3
+
+// arrowTriple(434)
+
+// const add = (a, b, c) => {
+//   return a + b + c
+// }
+
+// add(12, 4, 67)
+
+// const sayName = (name)=>{
+//   return "Welcome " + name
+// }
+
+//In arrow function, if we have only one parameter, then we can remove rounded bracket
+// if we are returning directly, then we can remove {} and also return keyword
+// const sayName = name => "Welcome " + name
+
+// let obj1 = {
+//   intro: function () {
+//     console.log("My name is " + this.age)
+//   },
+//   name: "Kanchan",
+//   age: 22,
+//   sayMyAge: () => {
+//     console.log("My age is :" + this.age)
+//   },
+//   marks: [23, 65, 98, 12],
+// }
+
+// obj1.intro()
+// obj1.sayMyAge()
+
+//Arrow function dont have their own this keyword unlike regular function
+
+let user1 = {
+  name: "Sridevi",
+  age: 26,
+  address: "Mumbai",
+}
+
+// let user2 = user1 //Copying user1 in user2 => Shallow copy
+// let user2 = Object.assign({}, user1) //Deep copy
+
+// Spread Operator
+let user2 = { ...user1, name: "Anwar" } //Deep Copying using spread operator
+
+// user2.name = "Anwar"
+
+console.log(user1)
+console.log(user2)
