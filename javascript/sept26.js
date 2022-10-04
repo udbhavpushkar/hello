@@ -388,19 +388,98 @@ function sayHello() {
 
 //Arrow function dont have their own this keyword unlike regular function
 
-let user1 = {
-  name: "Sridevi",
-  age: 26,
-  address: "Mumbai",
-}
+// let user1 = {
+//   name: "Sridevi",
+//   age: 26,
+//   address: "Mumbai",
+// }
 
 // let user2 = user1 //Copying user1 in user2 => Shallow copy
 // let user2 = Object.assign({}, user1) //Deep copy
 
 // Spread Operator
-let user2 = { ...user1, name: "Anwar" } //Deep Copying using spread operator
+// let user2 = { ...user1, name: "Anwar", married: true } //Deep Copying using spread operator
 
 // user2.name = "Anwar"
 
-console.log(user1)
-console.log(user2)
+// console.log(user1)
+// console.log(user2)
+
+// let arr = [23, 45, 67, 91]
+// let newArr = [5, 8, 9]
+
+// // let arr1 = arr
+// let arr1 = [...arr, ...newArr] // Deep copy of array using spread operator
+
+// arr1[2] = 99
+
+// console.log(arr)
+// console.log(arr1)
+
+// Array methods
+// callback function(element, index)
+
+// let ages = [21, 25, 67, 32]
+
+// for (let i = 0; i < ages.length; i++) {
+//   console.log("Age : " + ages[i] + ", index: " + i)
+// }
+
+//ForEach
+// const printElement = (val, index) => {
+//   console.log("Age : " + val, "index : " + index)
+// }
+
+// ages.forEach(printElement)
+
+// ages.forEach((ele, index) => {
+//   console.log("Index :" + index + ", Age : " + ele)
+// })
+
+//Map
+// let ages2 = []
+// for (let i = 0; i < ages.length; i++) {
+//   ages2.push(ages[i] + 2)
+// }
+
+//map will return a new array with elements that we return from a callback function
+
+// let ages2 = ages.map((val, index) => {
+//   return val + 2
+// })
+
+// console.log(ages2)
+
+let ages = [21, 25, 67, 32, 18, 23, 28, 33]
+
+//Filter
+// let ages2 = []
+
+// for (let i = 0; i < ages.length; i++) {
+//   if (ages[i] > 25) {
+//     ages2.push(ages[i])
+//   }
+// }
+
+// console.log(ages2)
+
+// let a = 24 > 4
+
+// filter will return a new array with elements that we return as true in callback function
+// let ages2 = ages.filter((val) => val > 25)
+
+// console.log(ages2)
+
+//Find areas if sides are given
+// let sides = [4, 8, 2, 10, 6] //[16, 64, 4, 100, 36]
+
+// let areas = sides.map((val) => val * val)
+
+// console.log(areas)
+
+//Find all even elements in array
+let nums = [9, 8, 7, 1, 2, 3, 4, 5, 6, 12, 45, 23, 32]
+
+let evenNums = nums.filter((val) => val % 2 === 0)
+
+console.log(evenNums)
