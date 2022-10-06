@@ -432,10 +432,12 @@ function sayHello() {
 
 // ages.forEach(printElement)
 
+//forEach will execute the callback function for each of the the element of the array
 // ages.forEach((ele, index) => {
 //   console.log("Index :" + index + ", Age : " + ele)
 // })
 
+// let ages = [21, 25, 67, 32]
 //Map
 // let ages2 = []
 // for (let i = 0; i < ages.length; i++) {
@@ -443,6 +445,7 @@ function sayHello() {
 // }
 
 //map will return a new array with elements that we return from a callback function
+//map will return a new array
 
 // let ages2 = ages.map((val, index) => {
 //   return val + 2
@@ -450,7 +453,7 @@ function sayHello() {
 
 // console.log(ages2)
 
-let ages = [21, 25, 67, 32, 18, 23, 28, 33]
+// let ages = [21, 25, 67, 32, 18, 23, 28, 33]
 
 //Filter
 // let ages2 = []
@@ -466,7 +469,10 @@ let ages = [21, 25, 67, 32, 18, 23, 28, 33]
 // let a = 24 > 4
 
 // filter will return a new array with elements that we return as true in callback function
-// let ages2 = ages.filter((val) => val > 25)
+// filter will return a new array
+// let ages2 = ages.filter((val) => {
+//   return val > 25
+// })
 
 // console.log(ages2)
 
@@ -478,8 +484,52 @@ let ages = [21, 25, 67, 32, 18, 23, 28, 33]
 // console.log(areas)
 
 //Find all even elements in array
-let nums = [9, 8, 7, 1, 2, 3, 4, 5, 6, 12, 45, 23, 32]
+// let nums = [9, 8, 7, 1, 2, 3, 4, 5, 6, 12, 45, 23, 32]
 
-let evenNums = nums.filter((val) => val % 2 === 0)
+// let evenNums = nums.filter((val) => val % 2 === 0)
 
-console.log(evenNums)
+// console.log(evenNums)
+
+let nums = [2, 5, 8, 7, 4]
+// let sum = 0
+// for (let i = 0; i < nums.length; i++) {
+//   sum = sum + nums[i]
+// }
+// console.log(sum)
+
+//Reduce
+// reduce will traverse through all the elements of array and return one value depending on the callback function
+// let sum = nums.reduce((temp, val) => {
+//   return temp + val
+// })
+
+// console.log(sum)
+
+// let max = nums.reduce((temp, val) => {
+//   if (val > temp) {
+//     temp = val
+//   }
+//   return temp
+// }, 0)
+
+// this is a special keyword which points to the object from which it is called
+// we cannot overwrite it
+
+let user = {
+  name: "Udbhav",
+  city: "Ayodhya",
+  intro: function () {
+    console.log(this.name + " is from " + this.city)
+  },
+  valueOf: function () {
+    console.log("Hihiihih")
+  },
+}
+
+// you can use dot operator to access value or [key]
+// user.name = "Mainak"
+user["name"] = "Mainak"
+
+// Prototype
+// Whenever an object is created, another special object is attached to it and that special object is Prototype
+// Prototype contains some methods and properties.
