@@ -56,7 +56,7 @@ var x = function (a) {
 // p()
 
 // Primitives => 7 Primitives data type
-//string, number, boolean, undefined, null
+//string, number, boolean, undefined, null, symbol
 // let str = "hdjaskhdkjashd"
 // let abc = 9879898.09876
 // let isMarried = false
@@ -533,3 +533,105 @@ user["name"] = "Mainak"
 // Prototype
 // Whenever an object is created, another special object is attached to it and that special object is Prototype
 // Prototype contains some methods and properties.
+
+//TDZ => Temporal Dead Zone => place or state of the varaible where it is unreachable
+
+// console.log(a)
+
+// let a = 89
+// console.log(a)
+
+// OOPs => Object Oriented Programmings
+// Class => It is a blueprint or template to create object
+// Object => It is an instance of a class
+
+//Template of car => Class Car
+// // class Car = ()=>{
+//     name: ,
+//     color: ,
+//     power: ,
+//     engine: ,
+//     brake: applyBreak = {
+//       .
+//       .
+//       .
+//       .
+//     },
+//     start: startingCar()
+// // }
+
+// new keyword creates a new object
+// let car1 = new Car("Tata", "red", 1100, 900)
+// let car1 = new Car("Tata", "red", 1100, 900)
+// let car1 = new Car("Tata", "red", 1100, 900)
+// let car1 = new Car("Tata", "red", 1100, 900)
+// let car1 = new Car("Tata", "red", 1100, 900)
+// let car1 = new Car("Tata", "red", 1100, 900)
+
+// Math.sqrt(3232)
+
+// console.log()
+
+// Math.max(23, 45)
+
+//Template of car
+// function createCar(name, color, engine) {
+//   let obj = {
+//     name: name,
+//     color: color,
+//     engine: engine,
+//     start: function () {
+//       console.log(this.name + " Car is starting...")
+//     },
+//     brake: function () {
+//       console.log("Car stopped")
+//     },
+//     accelerate: function (speed) {
+//       console.log("New speed is " + speed)
+//     },
+//   }
+
+//   return obj
+// }
+
+// //Object creation
+// let car1 = createCar("Tata", "Red", "900cc")
+// let car2 = createCar("Mercedeez", "Grey", "1100cc")
+
+// // function Car(name, color) {
+// //   this.name = name
+// //   this.color = color
+// // }
+
+// // let car3 = new Car("BMW", "redd")
+
+// // After ES6, we can use class keyword in JS, we can create class and initialize object from it.
+
+// // Template of car using class keyword
+
+// class Car {
+//   constructor(name, color, engine) {
+//     this.name = name
+//     this.color = color
+//     this.engine = engine
+//     console.log("Hey object created")
+//   }
+
+//   start() {
+//     console.log(this.name + " Car is starting...")
+//   }
+//   brake() {
+//     console.log("Car stopped")
+//   }
+// }
+
+// let car3 = new Car("Ferrari", "Yellow", "1500cc")
+//Constructor is a special method that invokes automatically when we create an object
+
+let a = 9
+let b = a
+
+a = 7
+
+console.log(a)
+console.log(b)
