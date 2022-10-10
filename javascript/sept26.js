@@ -628,10 +628,116 @@ user["name"] = "Mainak"
 // let car3 = new Car("Ferrari", "Yellow", "1500cc")
 //Constructor is a special method that invokes automatically when we create an object
 
-let a = 9
-let b = a
+// let a = 9
+// let b = a
 
-a = 7
+// a = 7
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
+
+//ES6 features
+
+// ""=> double quotes, ''=> simgle quotes
+
+// let and const
+// arrow functions
+// classes
+// multiline-string => using back-ticks (`) ,
+// let str = `This is
+// Newtonds dhsgdj asghjdgas hjdgashjgdahsjd
+// asdhjasgdhjasg`
+
+function yyy() {
+  return "Heyy jack"
+}
+
+//Template literals => use backticks
+let fname = "Mainak"
+let age = 25
+let printOld = "Hello " + fname + " you are " + age + " year old"
+let printNew = `Hello ${yyy()} you are ${age} year old`
+
+// console.log(printOld)
+// console.log(printNew)
+
+// console.log(`Hello Hey ${age}
+// fdjsgfhjsdf
+// dfkhjdsghfjkdsf
+// dsfbjhdsgfhjds`)
+
+//console.log => print in console
+
+// default parameter => incase you miss to provide parameters, it will be used
+// const double = (num = 5) => {
+//   console.log(num * 2)
+// }
+
+// double(20)
+
+// double()
+
+// destructuring => destructure array and objects
+
+// let arr = [45, 67, 69, 12, 5]
+// let [akhilesh, singh] = arr
+
+// console.log(akhilesh)
+// console.log(singh)
+
+// let userNew = {
+//   fname: "Akhilesh",
+//   lname: "Singh",
+//   age: 22,
+// }
+
+// let { fname, age } = userNew
+
+// console.log(fname)
+// console.log(age)
+
+// let teacher = "Sridevi"
+// let student = "Sagar ojha"
+// let new_batch = "Ubuntu"
+
+// let newtonClass = {
+//   teacher : teacher,
+//   student: student,
+//   batch: new_batch
+// }
+
+// let newtonClass1 = {
+//   teacher,
+//   student,
+//   batch: new_batch
+// }
+
+//Promises
+
+//Export import variables and functions
+
+// let sampleNum = 10.9
+// Math.round(sampleNum)
+
+// Math.ceil(sampleNum)
+
+// Math.floor(sampleNum) // will give the nearest bottom integer
+
+// Math.trunc(sampleNum) //will give the integer part of the number
+
+// Math.sqrt(25)
+
+// Math.pow(10, 3)
+
+//Task =>  .toFixed()
+
+// Math.random() // Returns decimal number between 0 and 1
+
+// let sentence = "I am from Ubuntu batch"
+
+// let newSentance = sentence.replace("Ubuntu", "MacOS")
+
+let students = "Jack,Jill,Shivam,Namrataa,Rajeev"
+let studentsList = students.split(",")
+
+;("")
