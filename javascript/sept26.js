@@ -739,5 +739,3 @@ let printNew = `Hello ${yyy()} you are ${age} year old`
 
 let students = "Jack,Jill,Shivam,Namrataa,Rajeev"
 let studentsList = students.split(",")
-
-;("")
