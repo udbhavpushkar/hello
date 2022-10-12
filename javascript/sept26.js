@@ -218,9 +218,9 @@ var x = function (a) {
 
 // Callback Functions => When a function is passed as an argument to another function
 
-function sayHello() {
-  console.log("hi everyone")
-}
+// function sayHello() {
+//   console.log("hi everyone")
+// }
 
 // function akhilesh(z) {
 //   console.log("Hey 1. 2. 3...")
@@ -490,7 +490,7 @@ function sayHello() {
 
 // console.log(evenNums)
 
-let nums = [2, 5, 8, 7, 4]
+// let nums = [2, 5, 8, 7, 4]
 // let sum = 0
 // for (let i = 0; i < nums.length; i++) {
 //   sum = sum + nums[i]
@@ -515,20 +515,20 @@ let nums = [2, 5, 8, 7, 4]
 // this is a special keyword which points to the object from which it is called
 // we cannot overwrite it
 
-let user = {
-  name: "Udbhav",
-  city: "Ayodhya",
-  intro: function () {
-    console.log(this.name + " is from " + this.city)
-  },
-  valueOf: function () {
-    console.log("Hihiihih")
-  },
-}
+// let user = {
+//   name: "Udbhav",
+//   city: "Ayodhya",
+//   intro: function () {
+//     console.log(this.name + " is from " + this.city)
+//   },
+//   valueOf: function () {
+//     console.log("Hihiihih")
+//   },
+// }
 
 // you can use dot operator to access value or [key]
 // user.name = "Mainak"
-user["name"] = "Mainak"
+// user["name"] = "Mainak"
 
 // Prototype
 // Whenever an object is created, another special object is attached to it and that special object is Prototype
@@ -648,15 +648,15 @@ user["name"] = "Mainak"
 // Newtonds dhsgdj asghjdgas hjdgashjgdahsjd
 // asdhjasgdhjasg`
 
-function yyy() {
-  return "Heyy jack"
-}
+// function yyy() {
+//   return "Heyy jack"
+// }
 
 //Template literals => use backticks
-let fname = "Mainak"
-let age = 25
-let printOld = "Hello " + fname + " you are " + age + " year old"
-let printNew = `Hello ${yyy()} you are ${age} year old`
+// let fname = "Mainak"
+// let age = 25
+// let printOld = "Hello " + fname + " you are " + age + " year old"
+// let printNew = `Hello ${yyy()} you are ${age} year old`
 
 // console.log(printOld)
 // console.log(printNew)
@@ -737,5 +737,40 @@ let printNew = `Hello ${yyy()} you are ${age} year old`
 
 // let newSentance = sentence.replace("Ubuntu", "MacOS")
 
-let students = "Jack,Jill,Shivam,Namrataa,Rajeev"
-let studentsList = students.split(",")
+// let students = "Jack,Jill,Shivam,Namrataa,Rajeev"
+// let studentsList = students.split(",")
+
+// let a = 9
+
+// if (a > 5) {
+//   console.log("Hey")
+// } else {
+//   console.log("Not today")
+// }
+
+//Ternary operator
+// condition  ? onTrue : onFalse
+// a > 5 ? console.log("Hey") : console.log("Not today")
+
+// let printNew1 = `Hello ${a > 5 ? "Hey" : "Not today"} you are ${age} year old`
+
+// console.log(printNew1)
+
+// let user = {
+//   name: "Udbhav",
+//   city: "Ayodhya",
+//   intro: function () {
+//     console.log(this.name + " is from " + this.city)
+//   },
+//   valueOf: function () {
+//     console.log("Hihiihih")
+//   },
+// }
+
+// console.log(this)
+
+var x = "Udbhav"
+
+//Window is global object
+
+//this keyword refers to the object from which it is called
